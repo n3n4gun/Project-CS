@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OrganizationDataSetTrips" targetNamespace="http://tempuri.org/OrganizationDataSetTrips.xsd" xmlns:mstns="http://tempuri.org/OrganizationDataSetTrips.xsd" xmlns="http://tempuri.org/OrganizationDataSetTrips.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="OrganizationConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="OrganizationConnectionString (Settings)" PropertyReference="ApplicationSettings.Практическая_работа__2.Properties.Settings.GlobalReference.Default.OrganizationConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ОрганизацииTableAdapter" GeneratorDataComponentClassName="ОрганизацииTableAdapter" Name="Организации" UserDataComponentName="ОрганизацииTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="OrganizationConnectionString (Settings)" DbObjectName="Организации" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Наименование организации] FROM Организации</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Наименование организации" DataSetColumn="Наименование организации" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OrganizationDataSetTrips" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="OrganizationDataSetTrips" msprop:Generator_DataSetName="OrganizationDataSetTrips">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Организации" msprop:Generator_RowEvHandlerName="ОрганизацииRowChangeEventHandler" msprop:Generator_RowDeletedName="ОрганизацииRowDeleted" msprop:Generator_RowDeletingName="ОрганизацииRowDeleting" msprop:Generator_RowEvArgName="ОрганизацииRowChangeEvent" msprop:Generator_TablePropName="Организации" msprop:Generator_RowChangedName="ОрганизацииRowChanged" msprop:Generator_RowChangingName="ОрганизацииRowChanging" msprop:Generator_TableClassName="ОрганизацииDataTable" msprop:Generator_RowClassName="ОрганизацииRow" msprop:Generator_TableVarName="tableОрганизации" msprop:Generator_UserTableName="Организации">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Наименование_x0020_организации" msprop:Generator_ColumnPropNameInRow="Наименование_организации" msprop:Generator_ColumnPropNameInTable="Наименование_организацииColumn" msprop:Generator_ColumnVarNameInTable="columnНаименование_организации" msprop:Generator_UserColumnName="Наименование организации" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
